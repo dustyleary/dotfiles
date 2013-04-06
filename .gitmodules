@@ -1,0 +1,3 @@
+[submodule "solarized.git"]
+	path = solarized.git
+	url = git://github.com/altercation/solarized.git
