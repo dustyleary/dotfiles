@@ -1,3 +1,30 @@
 [submodule "solarized.git"]
 	path = solarized.git
 	url = git://github.com/altercation/solarized.git
+[submodule "vim/vim-pathogen"]
+	path = vim/vim-pathogen
+	url = git://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/vim-vividchalk"]
+	path = vim/bundle/vim-vividchalk
+	url = git://github.com/tpope/vim-vividchalk.git
+[submodule "vim/bundle/vim-mru"]
+	path = vim/bundle/vim-mru
+	url = git://github.com/ornicar/vim-mru.git
+[submodule "vim/bundle/vim-matchit"]
+	path = vim/bundle/vim-matchit
+	url = git://github.com/tsaleh/vim-matchit.git
+[submodule "vim/bundle/netrw.vim"]
+	path = vim/bundle/netrw.vim
+	url = git://github.com/vim-scripts/netrw.vim.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/vim-scratch"]
+	path = vim/bundle/vim-scratch
+	url = git://github.com/duff/vim-scratch.git
+[submodule "vim/bundle/vim-colors-solarized"]
+	path = vim/bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git

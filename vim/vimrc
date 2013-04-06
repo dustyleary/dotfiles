@@ -1,0 +1,149 @@
+" Windows (not sure if this still works after moving into .dotfiles) {
+if !exists("g:fixed_win32_vimfiles") && (has('win32') || has('win64'))
+    let g:fixed_win32_vimfiles = 1
+    set runtimepath=$HOME/.dotfiles/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
+endif
+" }
+
+" Basics {
+set nocompatible
+let mapleader = ","
+nnoremap ; :
+imap <C-Space> <C-n>
+map <Leader>ev :e ~/.dotfiles/vim/vimrc<CR>
+map <Leader>sv :source ~/.dotfiles/vim/vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+" }
+
+" Pathogen {
+runtime! vim-pathogen/autoload/pathogen.vim
+call pathogen#incubate()
+call pathogen#helptags()
+" }
+
+" General {
+filetype plugin indent on
+syntax on
+set hidden
+scriptencoding utf-8
+set shortmess+=filmnrxoOtT                      " abbrev. of messages (avoids 'hit enter')
+set history=1000                                " Store a ton of history (default is 20)
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.pyo,*.class,*.obj,*.exe,*.pdb
+set nobackup
+set nowritebackup
+set noswapfile
+" }
+
+" Vim UI {
+" let g:solarized_termcolors=256
+set background=dark
+color solarized
+call togglebg#map("<F5>")
+
+" unmap arrow keys
+"nmap <right> <nop>
+"nmap <left> <nop>
+"nmap <up> <nop>
+"nmap <down> <nop>
+"imap <right> <nop>
+"imap <left> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+
+set showmode                        " display the current mode
+set ttyfast
+set autoread
+autocmd FileChangedShell * echohl WarningMsg | echo "File has been changed outside of vim." | echohl None
+autocmd FileChangedShellPost * echohl WarningMsg | echo "File has been changed outside of vim." | echohl None
+
+set cursorline                      " highlight current line
+hi cursorline guibg=#333333         " highlight bg color of current line
+hi CursorColumn guibg=#333333       " highlight cursor
+
+set laststatus=2
+set lazyredraw
+set statusline=%<%f\ %=\:\b%n%y%m%r%w\ %l,%c%V\ %P
+set backspace=indent,eol,start      " backspace for dummies
+set linespace=0                     " No extra spaces between rows
+set number                          " Line numbers on
+set winminheight=0                  " windows can be 0 line high 
+set wildmode=longest:full
+set wildmenu
+set complete=.,w,b,u,t,i,]
+set completeopt=menu,preview
+set whichwrap=b,s,h,l,<,>,[,]       " backspace and cursor keys wrap to
+
+" Searching {
+set ignorecase                      " case insensitive search
+set smartcase                       " case sensitive when uc present
+set showmatch                       " show matching brackets/parenthesis
+set incsearch                       " find as you type search
+set hlsearch                        " highlight search terms
+nnoremap <leader><space> :noh<cr>
+" }
+
+if has("gui_running")
+    set guioptions-=T
+    set guioptions-=m
+    set guioptions-=r
+    set guioptions-=l
+    set guioptions-=L
+    set lines=106
+    set columns=170
+    set number
+    if has("x11")
+        set guifont=Consolas:h13
+    else
+        set guifont=Consolas:h13:cDEFAULT
+    endif
+endif
+
+if has('mouse')
+  set mouse=a
+  if &term =~ "xterm" || &term =~ "screen"
+    set ttymouse=xterm2
+  endif
+endif
+
+set list
+set listchars=tab:>.,trail:.,extends:#,nbsp:.
+
+" }
+
+" Formatting {
+set autoindent
+set smartindent
+set expandtab
+set smarttab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set nowrap
+"set matchpairs+=<:> " match, to be used with %
+set pastetoggle=<F12> " pastetoggle (sane indentation on pastes)
+"set comments=sl:/*,mb:*,elx:*/ " auto format comment blocks
+" }
+
+" Yank text to the OS X clipboard
+noremap <Leader>y "*y
+noremap <Leader>yy "*Y
+
+" Preserve indentation while pasting text from the OS X clipboard
+noremap <Leader>p :set paste<CR>:put *<CR>:set nopaste<CR>
+
+map <Leader>w :b#<CR>
+map <silent> <Leader>cd :cd %:p:h<CR>
+map <silent> <Leader>t2 :set sw=2<CR>:set sts=2<CR>:set ts=2<CR>
+map <silent> <Leader>t4 :set sw=4<CR>:set sts=4<CR>:set ts=4<CR>
+
+map <Leader>s :Scratch<CR>
+
+let MRU_Max_Entries = 1000
+let MRU_Window_Height = 15
+let MRU_Exclude_Files = '.*\\Local Settings\\Temp.*'
+map <Leader>m :MRU<CR>
+
+"nerdtree
+let NERDTreeShowBookmarks = 1
+map <Leader>n :NERDTreeToggle<CR>
+
