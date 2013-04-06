@@ -32,6 +32,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.pyo,*.class,*.obj,*.exe,*.pdb
 set nobackup
 set nowritebackup
 set noswapfile
+set timeout timeoutlen=500 ttimeoutlen=1
 " }
 
 " Vim UI {
@@ -146,4 +147,12 @@ map <Leader>m :MRU<CR>
 "nerdtree
 let NERDTreeShowBookmarks = 1
 map <Leader>n :NERDTreeToggle<CR>
+
+"vimux
+map rp :PromptVimTmuxCommand
+map rl :RunLastVimTmuxCommand
+map ri :InspectVimTmuxRunner
+map rx :CloseVimTmuxPanes
+map rs :InterruptVimTmuxRunner
+
 
