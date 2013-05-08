@@ -36,7 +36,6 @@ set timeout timeoutlen=500 ttimeoutlen=1
 " }
 
 " Vim UI {
-" let g:solarized_termcolors=256
 set background=dark
 color solarized
 call togglebg#map("<F5>")
@@ -95,7 +94,7 @@ if has("gui_running")
     if has("x11")
         set guifont=Consolas:h13
     else
-        set guifont=Consolas:h13:cDEFAULT
+        set guifont=onsolata:h13:cDEFAULT
     endif
 endif
 
@@ -148,11 +147,5 @@ map <Leader>m :MRU<CR>
 let NERDTreeShowBookmarks = 1
 map <Leader>n :NERDTreeToggle<CR>
 
-"vimux
-map rp :PromptVimTmuxCommand
-map rl :RunLastVimTmuxCommand
-map ri :InspectVimTmuxRunner
-map rx :CloseVimTmuxPanes
-map rs :InterruptVimTmuxRunner
-
+autocmd filetype lisp,scheme,art setlocal equalprg=scmindent.rkt
 
