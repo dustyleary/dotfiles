@@ -40,3 +40,9 @@
 [submodule "vim/bundle/vim-clojure"]
 	path = vim/bundle/vim-clojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule "vim/bundle/vim-golang"]
+	path = vim/bundle/vim-golang
+	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "vim/bundle/unite.vim"]
+	path = vim/bundle/unite.vim
+	url = https://github.com/Shougo/unite.vim
