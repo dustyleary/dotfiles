@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/data/game-clients.git/zugs-lua/scripts/main/lua/z2'
+let g:netrw_dirhist_2='/data/game-clients.git/zugs-lua/scripts/main/lua/z2/entity'
+let g:netrw_dirhist_3='/data/game-clients.git/zugs-lua/scripts/main/lua/z2/component'
+let g:netrw_dirhist_4='/data/game-clients.git/zugs-lua/scripts/main/lua/z2'
