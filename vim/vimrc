@@ -150,6 +150,8 @@ let MRU_Window_Height = 15
 let MRU_Exclude_Files = '.*\\Local Settings\\Temp.*'
 map <Leader>m :MRU<CR>
 
+nnoremap <F5> :GundoToggle<CR>
+
 "nerdtree
 let NERDTreeShowBookmarks = 1
 map <Leader>n :NERDTreeToggle<CR>

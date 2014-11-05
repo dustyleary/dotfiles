@@ -4,42 +4,15 @@
 [submodule "vim/vim-pathogen"]
 	path = vim/vim-pathogen
 	url = git://github.com/tpope/vim-pathogen.git
-[submodule "vim/bundle/vim-vividchalk"]
-	path = vim/bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
 [submodule "vim/bundle/vim-mru"]
 	path = vim/bundle/vim-mru
 	url = git://github.com/ornicar/vim-mru.git
-[submodule "vim/bundle/vim-matchit"]
-	path = vim/bundle/vim-matchit
-	url = git://github.com/tsaleh/vim-matchit.git
-[submodule "vim/bundle/netrw.vim"]
-	path = vim/bundle/netrw.vim
-	url = git://github.com/vim-scripts/netrw.vim.git
-[submodule "vim/bundle/vim-coffee-script"]
-	path = vim/bundle/vim-coffee-script
-	url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "vim/bundle/vim-scratch"]
 	path = vim/bundle/vim-scratch
 	url = git://github.com/duff/vim-scratch.git
 [submodule "vim/bundle/vim-colors-solarized"]
 	path = vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule "vim/bundle/command-t"]
-	path = vim/bundle/command-t
-	url = git://github.com/wincent/Command-T.git
-[submodule "vim/bundle/vimux"]
-	path = vim/bundle/vimux
-	url = git://github.com/benmills/vimux.git
-[submodule "vim/bundle/vim-surround"]
-	path = vim/bundle/vim-surround
-	url = git://github.com/tpope/vim-surround.git
-[submodule "vim/bundle/vim-clojure"]
-	path = vim/bundle/vim-clojure
-	url = git://github.com/vim-scripts/VimClojure.git
-[submodule "vim/bundle/vim-golang"]
-	path = vim/bundle/vim-golang
-	url = git://github.com/jnwhiteh/vim-golang.git
 [submodule "vim/bundle/unite.vim"]
 	path = vim/bundle/unite.vim
 	url = https://github.com/Shougo/unite.vim
@@ -49,18 +22,6 @@
 [submodule "vim/bundle/ctrlp.vim"]
 	path = vim/bundle/ctrlp.vim
 	url = https://github.com/kien/ctrlp.vim
-[submodule "vim/bundle/ack.vim"]
-	path = vim/bundle/ack.vim
-	url = https://github.com/mileszs/ack.vim
-[submodule "vim/bundle/slimux"]
-	path = vim/bundle/slimux
-	url = https://github.com/epeli/slimux.git
-[submodule "vim/bundle/rainbow_parentheses.vim"]
-	path = vim/bundle/rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim.git
-[submodule "vim/bundle/vim-colors-jellybeans.vim"]
-	path = vim/bundle/vim-colors-jellybeans.vim
-	url = git@github.com:nanotech/jellybeans.vim.git
 [submodule "vim/bundle/gundo.vim"]
 	path = vim/bundle/gundo.vim
 	url = http://github.com/sjl/gundo.vim.git
